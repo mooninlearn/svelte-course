@@ -3,7 +3,8 @@
 
 <button><slot>Default Text</slot></button>
 
-<style>
+<style lang="scss">
+  // @use '../styles/variables.scss';
   button {
     border: none;
     background-color: #ff3e00;
@@ -12,5 +13,8 @@
     font-weight: bold;
     border-radius: 5px;
     cursor: pointer;
+    &:hover {
+      background-color: #fff;
+    }
   }
 </style>
