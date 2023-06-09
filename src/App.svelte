@@ -1,9 +1,10 @@
 <script>
     import Button from './lib/Button.svelte';
-
 </script>
 
-<Button title="Something" />
+<Button>
+    Button Text
+</Button>
 
 <style>
 </style>
