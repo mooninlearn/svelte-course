@@ -3,7 +3,10 @@
   export let shadow = false;
 </script>
 
-<button class={size === 'large' ? "size-lg" : "size-sm"}><slot>Default Text</slot></button>
+<button 
+  class:size-lg={size === 'large'}
+  class:size-sm={size === 'small'}
+><slot>Default Text</slot></button>
 
 <style lang="scss">
   button {
